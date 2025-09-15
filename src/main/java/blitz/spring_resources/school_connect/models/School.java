@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -30,9 +31,10 @@ public class School {
     private String state;
     private String country;
     private String zipCode;
+    private boolean active;
     @JsonProperty(value = "mail-id")
     @Column(name = "mail_id", unique = true)
     private String mailId;
-    @OneToMany(mappedBy = "school")
+    @OneToMany(mappedBy = "school", cascade = CascadeType.ALL)
     private List<Student> students;
 }

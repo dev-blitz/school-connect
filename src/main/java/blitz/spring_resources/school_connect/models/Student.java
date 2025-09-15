@@ -45,7 +45,8 @@ public class Student {
     private String country;
     @JsonProperty(value = "zip-code")
     private String zipCode;
-    @ManyToOne(cascade = CascadeType.ALL)
+    private boolean active;
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private School school;
 
     public Student(String name, int age, String grade, String studentId) {
