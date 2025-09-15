@@ -39,7 +39,7 @@ SchoolConnect is a comprehensive school management system built with Spring Data
 
 1. Clone the repository
 
-   git clone [https://github.com/yourusername/schoolconnect.git](https://github.com/dev-blitz/spring-resources-spring-data-school-connect.git)
+   git clone 
    cd school-connect
    
 3. Configure database connection in `src/main/resources/application.properties` or `application.yml`:
@@ -65,7 +65,4 @@ For full API documentation, refer to Swagger/OpenAPI docs in the project.
 
 Abhinab Dutta Gupta — abhinab.duttagupta@gmail.com
 
-Project GitHub: https://github.com/dev-blitz/spring-resources-spring-data-school-connect.git
-
-
-)
+Project GitHub: 
