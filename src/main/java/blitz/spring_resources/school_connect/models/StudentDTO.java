@@ -4,7 +4,7 @@ public record StudentDTO(
         String firstName,
         String middleName,
         String lastName,
-        int age,
         String grade,
-        String studentId) {
+        String studentId,
+        String mailId) {
 }
